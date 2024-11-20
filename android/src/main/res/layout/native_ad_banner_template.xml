@@ -19,9 +19,6 @@
                 android:id="@+id/media"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="@dimen/hiad_5_dp"
-                android:layout_marginBottom="@dimen/hiad_5_dp"
                 android:adjustViewBounds="true" />
 
             <TextView
@@ -39,8 +36,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_gravity="center"
@@ -83,21 +79,20 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <Button
-                    android:id="@+id/call_to_action"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/hiad_32_dp"
-                    android:layout_marginStart="@dimen/hiad_4_dp"
-                    android:background="#1D9CE7"
-                    android:textSize="@dimen/hiad_text_12_sp"
-                    android:textColor="@android:color/white"
-                    android:paddingTop="@dimen/hiad_1_dp"
-                    android:paddingBottom="@dimen/hiad_1_dp"
-                    android:paddingStart="@dimen/hiad_14_dp"
-                    android:paddingEnd="@dimen/hiad_14_dp"
-                    />
             </LinearLayout>
+            <Button
+                android:id="@+id/call_to_action"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hiad_40_dp"
+                android:background="#1D9CE7"
+                android:textSize="@dimen/hiad_text_14_sp"
+                android:textColor="@android:color/white"
+                android:paddingTop="@dimen/hiad_1_dp"
+                android:paddingBottom="@dimen/hiad_1_dp"
+                android:paddingStart="@dimen/hiad_14_dp"
+                android:paddingEnd="@dimen/hiad_14_dp"
+                />
         </LinearLayout>
     </com.huawei.hms.ads.nativead.NativeView>
 </merge>
