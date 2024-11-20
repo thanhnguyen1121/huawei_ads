@@ -22,7 +22,7 @@
                 android:id="@+id/media"
                 android:layout_width="76dp"
                 android:layout_height="@dimen/hiad_56_dp"
-                android:layout_marginStart="@dimen/hiad_20_dp"
+                android:layout_marginStart="@dimen/hiad_16_dp"
                 android:layout_marginTop="@dimen/hiad_8_dp"
                 android:layout_marginBottom="@dimen/hiad_8_dp" />
 
@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="107dp"
                 android:layout_marginTop="@dimen/hiad_8_dp"
-                android:layout_marginEnd="@dimen/hiad_48_dp"
+                android:layout_marginEnd="@dimen/hiad_16_dp"
                 android:layout_marginBottom="@dimen/hiad_8_dp"
                 android:background="#FFFFFF">
 
@@ -41,6 +41,7 @@
                     android:layout_height="@dimen/hiad_36_dp"
                     android:layout_marginBottom="@dimen/hiad_16_dp"
                     android:alpha="1"
+                    android:maxLines="1"
                     android:textColor="#000000"
                     android:textSize="@dimen/hiad_text_9_sp" />
 
@@ -69,11 +70,12 @@
 
                 <Button
                     android:id="@+id/call_to_action"
-                    android:layout_width="@dimen/hiad_56_dp"
-                    android:layout_height="@dimen/hiad_16_dp"
+                    android:layout_width="@dimen/hiad_86_dp"
+                    android:layout_height="@dimen/hiad_20_dp"
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="@dimen/hiad_36_dp"
                     android:background="@drawable/native_button_rounded_corners_shape"
+                    android:maxLines="1"
                     android:textColor="#FFFFFF"
                     android:textSize="@dimen/hiad_text_9_sp" />
             </RelativeLayout>
