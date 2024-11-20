@@ -26,11 +26,25 @@
                 android:layout_below="@id/media">
 
                 <TextView
+                    android:id="@+id/flag"
+                    android:layout_width="@dimen/hiad_20_dp"
+                    android:layout_height="@dimen/hiad_14_dp"
+                    android:layout_marginStart="@dimen/hiad_8_dp"
+                    android:layout_marginTop="@dimen/hiad_12_dp"
+                    android:background="@drawable/native_flag_rounded_corners_shape"
+                    android:gravity="center"
+                    android:text="@string/flag"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/hiad_text_9_sp"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:id="@+id/title"
                     android:layout_width="180dp"
                     android:layout_height="@dimen/hiad_17_dp"
+                    android:layout_below="@+id/flag"
                     android:layout_marginStart="@dimen/hiad_24_dp"
-                    android:layout_marginTop="@dimen/hiad_14_dp"
+                    android:layout_marginTop="@dimen/hiad_4_dp"
                     android:alpha="1"
                     android:textColor="#000000"
                     android:textSize="@dimen/hiad_text_12_sp" />
@@ -48,19 +62,6 @@
                     android:textColor="#666666"
                     android:textSize="@dimen/hiad_text_9_sp" />
 
-                <TextView
-                    android:id="@+id/flag"
-                    android:layout_width="@dimen/hiad_20_dp"
-                    android:layout_height="@dimen/hiad_14_dp"
-                    android:layout_marginStart="@dimen/hiad_8_dp"
-                    android:layout_marginTop="@dimen/hiad_40_dp"
-                    android:layout_toEndOf="@+id/source"
-                    android:background="@drawable/native_flag_rounded_corners_shape"
-                    android:gravity="center"
-                    android:text="@string/flag"
-                    android:textColor="#FFFFFF"
-                    android:textSize="@dimen/hiad_text_9_sp"
-                    android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -71,13 +72,14 @@
 
                 <Button
                     android:id="@+id/call_to_action"
-                    android:layout_width="@dimen/hiad_72_dp"
-                    android:layout_height="@dimen/hiad_24_dp"
+                    android:layout_width="@dimen/hiad_98_dp"
+                    android:layout_height="@dimen/hiad_32_dp"
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="@dimen/hiad_24_dp"
-                    android:layout_marginEnd="@dimen/hiad_24_dp"
+                    android:layout_marginEnd="@dimen/hiad_8_dp"
                     android:layout_marginBottom="@dimen/hiad_24_dp"
                     android:background="@drawable/native_button_rounded_corners_shape"
+                    android:maxLines="1"
                     android:textColor="#FFFFFF"
                     android:textSize="@dimen/hiad_text_12_sp" />
             </RelativeLayout>

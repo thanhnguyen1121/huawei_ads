@@ -28,7 +28,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/hiad_4_dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -57,6 +56,7 @@
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_marginStart="@dimen/hiad_8_dp"
+                        android:layout_marginTop="@dimen/hiad_4_dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" >
 
