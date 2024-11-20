@@ -70,7 +70,7 @@
 
                 <Button
                     android:id="@+id/call_to_action"
-                    android:layout_width="@dimen/hiad_86_dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="@dimen/hiad_20_dp"
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="@dimen/hiad_36_dp"
