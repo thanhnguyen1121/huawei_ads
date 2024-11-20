@@ -74,6 +74,7 @@
                     android:layout_height="@dimen/hiad_20_dp"
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="@dimen/hiad_36_dp"
+                    android:paddingHorizontal="@dimen/hiad_8_dp"
                     android:background="@drawable/native_button_rounded_corners_shape"
                     android:maxLines="1"
                     android:textColor="#FFFFFF"

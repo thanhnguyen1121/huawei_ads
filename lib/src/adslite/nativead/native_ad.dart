@@ -29,12 +29,15 @@ class NativeAd extends StatefulWidget {
   /// Controller which gives you access to the methods that are associated with a native ad.
   final NativeAdController? controller;
 
+  final Widget? skeleton;
+
   const NativeAd({
     Key? key,
     required this.adSlotId,
     this.type = NativeAdType.banner,
     this.styles,
     this.controller,
+    this.skeleton,
   }) : super(key: key);
 
   @override
@@ -43,7 +46,9 @@ class NativeAd extends StatefulWidget {
 
 class _NativeAdState extends State<NativeAd> {
   late NativeAdController _nativeAdController;
+
   NativeStyles? get _nativeStyles => widget.styles;
+
   NativeAdType get _type => widget.type;
   NativeAdLoadState _state = NativeAdLoadState.loading;
 
@@ -69,7 +74,7 @@ class _NativeAdState extends State<NativeAd> {
               size: 40,
             )
           : _state == NativeAdLoadState.loading
-              ? const Center(child: CircularProgressIndicator())
+              ? widget.skeleton ?? const Center(child: CupertinoActivityIndicator(radius: 12))
               : _createNativePlatformView(),
     );
   }
