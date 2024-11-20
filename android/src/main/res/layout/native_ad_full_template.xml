@@ -28,6 +28,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hiad_4_dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -40,8 +41,22 @@
                         android:paddingBottom="@dimen/hiad_4_dp"
                         android:adjustViewBounds="true" />
 
+                    <TextView
+                        android:id="@+id/flag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="@string/flag"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/hiad_text_13_sp"
+                        android:paddingTop="@dimen/hiad_2_dp"
+                        android:paddingBottom="@dimen/hiad_2_dp"
+                        android:paddingStart="@dimen/hiad_2_dp"
+                        android:paddingEnd="@dimen/hiad_2_dp" />
+
                     <LinearLayout
                         android:orientation="vertical"
+                        android:layout_marginStart="@dimen/hiad_8_dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" >
 
@@ -68,18 +83,6 @@
                         </LinearLayout>
 
                     </LinearLayout>
-                    <TextView
-                        android:id="@+id/flag"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start"
-                        android:text="@string/flag"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/hiad_text_13_sp"
-                        android:paddingTop="@dimen/hiad_2_dp"
-                        android:paddingBottom="@dimen/hiad_2_dp"
-                        android:paddingStart="@dimen/hiad_2_dp"
-                        android:paddingEnd="@dimen/hiad_2_dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -87,7 +90,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/hiad_8_dp"
                     android:orientation="vertical">
-
                     <TextView
                         android:id="@+id/description"
                         android:layout_width="match_parent"
